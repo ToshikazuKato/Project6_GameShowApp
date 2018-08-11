@@ -39,10 +39,15 @@ const getRandomAsArray = (arr) => {
 const addPhraseToDisplay = (arr) => {
 
   arr.map((val)=>{
+    //const div = document.createElement('div');
     const li = document.createElement('li');
+    //ul.appendChild(div);
+    //div.appendChild(li);
     ul.appendChild(li);
+    //div.style.display = 'inline-block';
     li.textContent = val;
     if(val !== " "){
+      //div.classList.add("card");
       li.classList.add("letter");
     }else{
       li.classList.add("space");
